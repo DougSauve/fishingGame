@@ -1,0 +1,260 @@
+body {
+margin: 0;
+padding: 0;
+background: url(./Fishing_Background.jpg); 
+background-repeat: no-repeat;
+background-size: cover;
+}
+#rules{
+	margin-top: 125px;
+}
+a {
+		color: black;
+		font-weight: bold;
+}
+.bold {
+font-weight: bold;
+}
+#fishingTitle{
+margin-top: 10px;
+font-family: cursive;
+font-style: italic;
+text-align: center;	
+}
+
+.circle{
+width: 175px;
+height: 175px;
+border-radius: 100px;
+border: 2px solid black;
+display: table;
+}
+.circle-text{
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+font-family: cursive;
+font-style: italic;
+font-size: 16px;
+text-align: middle;
+}
+#circle1{
+position: fixed;
+top: -25px;
+left: -15px;
+background-color: #e0cf0b;
+z-index: 1;
+}
+#circle2{
+position: absolute;
+top: 40px;
+left: 125px;
+background-color: #c24501;
+z-index: 1;
+}
+#circle-text2{
+padding: 8px;
+
+}
+#circle3{
+position: absolute;
+top: -40px;
+left: 265px;
+background-color: #942701;
+z-index: 3;
+}
+#circle-text3{
+padding: 8px;
+padding-top: 24px;
+}
+#circle4{
+position: absolute;
+top: 40px;
+left: 405px;
+background-color: #c24501;
+z-index: 2;
+}
+#circle-text4{
+padding: 8px;
+}
+#inCircle4{
+position: relative;
+left: 5px;
+}
+#circle5{
+position: absolute;
+top: -65px;
+left: 970px;
+background-color: #942701;
+z-index: 1;
+}
+#circle-text5{
+padding: 8px;
+padding-top: 40px;
+font-size: 20px;
+font-weight: bold;
+}
+#circle6{
+position: absolute;
+top: 25px;
+left: 835px;
+background-color: #c24501;
+z-index: 2;
+}
+#circle-text6{
+padding: 8px;
+}
+#circle7{
+position: absolute;
+top: 105px;
+left: 975px;
+background-color: #ee7001;
+z-index: 3;
+}
+#circle-text7{
+padding: 8px;
+}
+#circle8{
+position: absolute;
+top: 25px;
+left: 1105px;
+background-color: #c24501;
+z-index: 2;
+}
+#circle-text8{
+padding: 8px;
+}
+
+.smallCircle{
+width: 100px;
+height: 100px;
+border-radius: 100px;
+border: 2px solid black;
+display: table;
+}
+.smallCircle-text{
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+font-family: cursive;
+font-style: italic;
+font-size: 16px;
+text-align: middle;
+}
+.gradient-style{
+  padding: 25px;
+  
+  text-align: center;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+
+  background: url(./mainGame_background.jpg);
+  background-size: cover;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+#mainGame {
+  position: absolute;
+  left: 450px;
+  top: 325px;
+  display: inline;
+  width: 400px;
+  height: 250px;
+  
+  z-index: 1;
+}
+#timeLeftCircle{
+	position: absolute;
+	top: 265px;
+	left: 400px;
+	background-color: #b00c0c;
+	z-index: 2;
+}
+#skillCircle{
+	position: absolute;
+	top: 265px;
+	left: 850px;
+	background-color: #c9c302;
+	z-index: 2;
+}
+#baitCircle{
+	position: absolute;
+	top: 575px;
+	left: 400px;
+	background-color: #4b6b7d;
+	z-index: 2;
+}
+#amountCaughtCircle{
+
+	position: absolute;
+	top: 575px;
+	left: 850px;
+	background-color: #088006;
+	z-index: 2;
+}
+#cast{
+background-color: b00c0c;
+width: 90px;
+height: 40px;
+border: 2px solid black;
+border-radius: 20px;
+}
+#getBait{
+background-color: #4b6b7d;
+width: 140px;
+height: 40px;
+border: 2px solid black;
+border-radius: 20px;	
+}
+#reelIn{
+background-color: #d71ad09;
+width: 150px;
+height: 40px;
+border: 2px solid black;
+border-radius: 20px;
+}
+#jerk{
+background-color: #d98909;
+width: 150px;
+height: 40px;
+border: 2px solid black;
+border-radius: 20px;
+}
+#cutLine{
+background-color: 9302b0;
+width: 150px;
+height: 40px;
+border: 2px solid black;
+border-radius: 20px;
+}
+#again{
+background-color: #04BF5B;
+width: 120px;
+height: 40px;
+border: 2px solid black;
+border-radius: 20px;
+}
+#restart{
+background-color: #66BF5B;
+width: 170px;
+height: 40px;
+border: 2px solid black;
+border-radius: 20px;
+}
+#highScores{
+background-color: red;
+width: 400px;
+height: 1010px;
+
+position: absolute;
+top: 800px;
+left: 450px;
+z-index: 5;
+}
+
+
+
+
+

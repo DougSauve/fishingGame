@@ -1,0 +1,101 @@
+<html>
+ <head>
+   <title>
+     The JavaScript Playground
+   </title>
+   
+   <script src="FishingFunctions.js"></script>
+   <!--<script src="basicFunctions.js"></script>-->
+   <link rel="stylesheet" type="text/css" href="./FishingStyle.css">
+   
+ </head>
+ 
+ <body>
+  
+  <div id = "bubbles">
+    <div id = "circle1" class = "circle">
+      <div id = "circle-text1" class = "circle-text"><a href = "./index.html">Mighty Games<br />Main Page</a></div>
+    </div>
+	
+	<div id = "circle2" class = "circle" onClick = "say('circle-text2', 'Hey! Who clicked me?');" >
+      <div id = "circle-text2" class = "circle-text">Catch as much<br /> fish as you can in an hour! Each actions costs you <b>time.</b></div>
+    </div>
+	
+	<div id = "circle3" class = "circle" onClick = "say('circle-text3', 'Hey! Who clicked me?');" >
+      <div id = "circle-text3" class = "circle-text"><b>Bait</b> increases your chances of getting a bite, but you can still catch fish without using it.</div>
+    </div>
+	
+	<div id = "circle4" class = "circle" onClick = "say('circle-text4', 'Hey! Who clicked me?');" >
+      <div id = "circle-text4" class = "circle-text"><span id = "inCircle4">When you catch</span><br /> a fish, your <b>skill</b> rises. The higher your skill, the better your chances!</div>
+    </div>
+	
+	<div id = "circle5" class = "circle" onClick = "say('circle-text5', 'Hey! Who clicked me?');" >
+      <div id = "circle-text5" class = "circle-text">Once you have a fish on the line:</div>
+    </div>
+	
+	<div id = "circle6" class = "circle" onClick = "say('circle-text6', 'Hey! Who clicked me?');" >
+      <div id = "circle-text6" class = "circle-text"> <b>Reeling in </b>is safer. You can slowly pull the fish in, as long as it isn't too big for you!</div>
+    </div>
+	
+	<div id = "circle7" class = "circle" onClick = "say('circle-text7', 'Hey! Who clicked me?');" >
+      <div id = "circle-text7" class = "circle-text"><b>Jerking the line</b><br /> is risky. You might bringing the fish a lot closer (no matter its size) or wreck your chances.</div>
+    </div>
+	
+	<div id = "circle8" class = "circle" onClick = "say('circle-text8', 'Hey! Who clicked me?');" >
+      <div id = "circle-text8" class = "circle-text"><b>Cut the line</b> if this fish is taking too long!</div>
+    </div>
+  </div>
+	
+	
+  <h1 id = "fishingTitle">The Fishing Game</h1>
+ 
+  
+  
+  <div id = "mainGame" class = "gradient-style block-inline">
+    <p id = "story"></p>
+    <button id = "cast" class = "circle-text bold" type = "button" onClick = "fish();">Cast!</button>
+    <button id = "getBait" class = "circle-text bold" type = "button" onClick = "getBait();">Find some bait.</button>
+    <button id = "reelIn" class = "circle-text bold" type = "button" onClick = "reelIn();">Reel in the line.</button>
+	<button id = "jerk" class = "circle-text bold" type = "button" onClick = "jerk();">Jerk the line.</button>
+	<button id = "cutLine" class = "circle-text bold" type = "button" onClick = "cutLine();">Cut the line.</button>
+    <button id = "again" class = "circle-text bold" type = "button" onClick = "switchToCasting();">Keep fishing!</button>
+	<button id = "restart" class = "circle-text bold" type = "button" onClick = "initialize();">Go fishing again!</button>
+	<form id = "submitForm"><input type = "text"></form>
+	<button id = "submitButton" class = "circle-text bold" type = "button" onClick = "submitName();">Submit</button>
+  </div>
+  
+    <div id = "timeLeftCircle" class = "smallCircle">
+	   <div id = "timeLeft" class = "circle-text bold"></div>
+	</div>
+	
+	<div id = "skillCircle" class = "smallCircle">
+	  <div id = "skill" class = "circle-text bold"></div>
+	</div>
+	
+	<div id = "baitCircle" class = "smallCircle">
+	 <div id = "bait" class = "circle-text bold"></div>
+	</div>
+	
+	<div id = "amountCaughtCircle" class = "smallCircle">
+	 <div id = "amountCaught" class = "circle-text bold"></div>
+	</div>
+	
+	<div id = "highScores" class = "gradient-style bold"><h2><u>High Scores</u></h2>
+		<p id = "high0" class = "gradient-style">empty</p>
+		<p id = "high1" class = "gradient-style">empty</p>
+		<p id = "high2" class = "gradient-style">empty</p>
+		<p id = "high3" class = "gradient-style">empty</p>
+		<p id = "high4" class = "gradient-style">empty</p>
+		<p id = "high5" class = "gradient-style">empty</p>
+		<p id = "high6" class = "gradient-style">empty</p>
+		<p id = "high7" class = "gradient-style">empty</p>
+		<p id = "high8" class = "gradient-style">empty</p>
+		<p id = "high9" class = "gradient-style">empty</p>
+	</div>
+	
+	
+  <script>
+   initialize();
+  </script>
+ </body>
+</html>
